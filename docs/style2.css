@@ -1,0 +1,28 @@
+@font-face{
+  font-family: Cool;
+  src: url(font/Makinas-4-Square.otf) format("opentype");
+}
+
+body {
+  background-color: #96b7ea;
+  font-family: "Cool", sans-serif;
+  padding: 5px 25px;
+  font-size: 100px;
+  margin: 0;
+  color: #444;
+  
+  background-image:url('https://i.imgur.com/296B6cx.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+  background-position:center;
+  }
+
+ div {
+  width: 1000px;
+  height: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -160px 0 0 -500px;
+}

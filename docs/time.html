@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Time</title>
+	<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+	<div class="fixed-center">
+    <script language="JavaScript">   
+      var Today=new Date();
+      document.write('<font color="#ffffff"><font size="30"></font>'); 
+      document.write( Today.getFullYear()+ " 年 " + (Today.getMonth()+1) + " 月 " + Today.getDate() + " 日 <span id='clock'></span>");
+      var now,hours,minutes,seconds,timeValue; 
+      function showtime(){ 
+        now = new Date(); 
+        hours = now.getHours(); 
+        minutes = now.getMinutes(); 
+        seconds = now.getSeconds(); 
+        timeValue = (hours >= 12) ? " 午後 " : " 午前 "; 
+        timeValue += ((hours > 12) ? hours - 12 : hours) + "："; 
+        timeValue += ((minutes < 10) ? " 0" : " ") + minutes + "："; 
+        timeValue += ((seconds < 10) ? " 0" : " ") + seconds + " "; 
+        clock.innerHTML = timeValue; 
+        setTimeout("showtime()",100); 
+      } 
+      showtime(); 
+    </script>
+    </div>
+</body>
+</html>
