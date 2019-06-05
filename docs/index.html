@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wan^2's Blog</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #1e2b4a;
+      }
+      li {
+        float: left;
+      }
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 15px 11px;
+        text-decoration: none;
+      }
+      li a:hover {
+        background-color: #4386c7;
+      }
+      img {
+      max-width: 100%;
+      height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="album.html">1</a></li>
+      <li><a href="contract.html">2</a></li>
+      <li><a href="about.html">3</a></li>
+      <li><a href="time.html">Javascript Time</a></li>
+    </ul>
+    <h1 align="center"><light>Home</light><sub></sub></h1>
+    <p>
 
+    </p>
+
+    <div style="width:800px;height:800px;border:3px #cccccc ;margin:0px auto;"></div>
+
+    <div class="fixed-bottom">
+    <script language="JavaScript">   
+      var Today=new Date();
+      document.write('<font color="#ffffff"><div align="center"><font size="10"></font>'); 
+      document.write('<font size="6">'); 
+      document.write( Today.getFullYear()+ " 年 " + (Today.getMonth()+1) + " 月 " + Today.getDate() + " 日 <span id='clock'></span>");
+      var now,hours,minutes,seconds,timeValue; 
+      function showtime(){ 
+        now = new Date(); 
+        hours = now.getHours(); 
+        minutes = now.getMinutes(); 
+        seconds = now.getSeconds(); 
+        timeValue = (hours >= 12) ? " 下午 " : "上午 "; 
+        timeValue += ((hours > 12) ? hours - 12 : hours) + " 點"; 
+        timeValue += ((minutes < 10) ? " 0" : " ") + minutes + " 分"; 
+        timeValue += ((seconds < 10) ? " 0" : " ") + seconds + " 秒"; 
+        clock.innerHTML = timeValue; 
+        setTimeout("showtime()",100); 
+      } 
+      showtime(); 
+    </script>
+    </div>
+
+    
+
+  </body>
+</html>
