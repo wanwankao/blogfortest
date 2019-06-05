@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+@import url('https://fonts.googleapis.com/earlyaccess/notosanstc.css');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+@font-face{
+  font-family: Cool;
+  src: url(font/Makinas-4-Square.otf) format("opentype");
+}
+@font-face{
+  font-family: Summer;
+  src: url(font/RiiTN_R.otf) format("opentype");
+}
+
+
+body {
+  background-color: #96b7ea;
+  font-family: "Cool", sans-serif;
+  padding: 5px 25px;
+  font-size: 18px;
+  margin: 0;
+  color: #444;
+  
+  background-image:url('https://i.imgur.com/v3Twnea.jpg' );
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+}
+h1 {
+  font-family: 'Cool',light, sans-serif;
+  font-weight: lighter;
+  font-size: 60px;
+}
+
+div id="#para1"{
+  text-align: center;
+  color: white;
+}
+
+.fixed{
+  position: static;
+}
+
+sub{
+  font-family: "Noto Sans TC", serif;
+  font-size: 20px;
+  font-weight: lighter;
+  color: #444
+}
